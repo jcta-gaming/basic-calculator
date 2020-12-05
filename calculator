@@ -1,0 +1,51 @@
+//c++
+
+// calculaotr 2.0.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	double num;
+	double num2;
+
+	cout << "enter your first number";
+	cin >> num;
+
+	cout << "enter your second number";
+	cin >> num2;
+
+	char options;
+	cout << "please select any symbol (+,*,/,-) : ";
+	cin >> options;
+	switch (options)
+	{
+	case '/':
+		if (num2 == 0)
+		{
+			cout << "division is not possible..." << endl;
+			break;
+		}
+		else
+		cout << "division = " << num / num2 << endl;
+		break;
+	case '*':
+			cout << "multyplication = " << num * num2 << endl;
+		break;
+	case '+':
+		cout << "addition = " << num + num2 << endl;
+		break;
+	case '-':
+		cout << "subtraction = " << num - num2 << endl;
+		break;
+
+		main();
+	}
+
+
+	system("pause");
+	return 0;
+}
